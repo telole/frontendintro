@@ -6,6 +6,9 @@ import Login from "../view/Login.vue";
 import Dashboard from "../view/Dashboard.vue";
 import List from "../view/List.vue";
 import Kontak from "../view/kontak.vue";
+import Poke from "../view/poke.vue";
+import Main from "../CRUD/Main.vue";
+import Edit from "../CRUD/Edit.vue";
 
 
 const routes  = [
@@ -29,6 +32,21 @@ const routes  = [
         name: 'dir',
         component: List
     },
+    {
+        path:'/pokemon',
+        name: 'fetch',
+        component:Poke
+    },
+    {
+        path:'/crud',
+        name:'crud',
+        component:Main
+    },
+    {
+        path : '/edit/:id',
+        name : 'edit',
+        component: Edit
+    }
 
 ]
 
